@@ -63,3 +63,4 @@ Retrieves data from the server and returns it as a file saved to the filesystem.
 
 Sends data to the server.
 
+# URLSession acts as a factory for URLSessionTask instances.
