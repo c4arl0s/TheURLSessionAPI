@@ -12,3 +12,32 @@
 1. URLSessionDataTask retrieves data from the server and returns it as Data in memory.
 2. URLSessionDownloadTask retrieves data from the server and returns it as a file saved to the filesystem.
 3. URLSessionUploadTask sends data to the server.
+
+# The properties on URLRequest:
+
+- allHTTPHeaderFields
+- allowsCellularAccess
+- cachePolicy
+- httpMethod
+- timeoutInterval
+
+# allHTTPHeaderFields
+
+A dictionary of metadata about the HTTP transaction, including character encoding and how the server should handle caching.
+
+# allowsCellularAccess
+
+A Boolean that represents whether a request is allowed to use cellular data
+
+# cachePolicy
+
+The property that determines whether and how the local cache should be used
+
+# httpMethod
+
+the request method; the default is GET, and other values are POST, PUT, and DELETE
+
+# timeoutInterval
+
+The maximum duration a connection to the server will be attempted for.
+
