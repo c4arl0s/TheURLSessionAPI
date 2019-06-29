@@ -21,23 +21,45 @@
 - httpMethod
 - timeoutInterval
 
-# allHTTPHeaderFields
+## allHTTPHeaderFields
 
 A dictionary of metadata about the HTTP transaction, including character encoding and how the server should handle caching.
 
-# allowsCellularAccess
+## allowsCellularAccess
 
 A Boolean that represents whether a request is allowed to use cellular data
 
-# cachePolicy
+## cachePolicy
 
 The property that determines whether and how the local cache should be used
 
-# httpMethod
+## httpMethod
 
 the request method; the default is GET, and other values are POST, PUT, and DELETE
 
-# timeoutInterval
+## timeoutInterval
 
 The maximum duration a connection to the server will be attempted for.
+
+# URLSessionTask
+
+The class that communicates with the web service is an instance of URLSessionTask.
+
+- There are three kinds of tasks:
+
+1. URLSessionDataTask
+2. URLSessionDownloadTask
+3. URLSessionUploadTask
+
+## 1. URLSessionDataTask
+
+Retrieves data from the server and returns it as Data in memory.
+
+## 2. URLSessionDownloadTask
+
+Retrieves data from the server and returns it as a file saved to the filesystem.
+
+## 3. URLSessionUploadTask
+
+Sends data to the server.
 
