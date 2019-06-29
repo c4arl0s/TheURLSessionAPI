@@ -64,3 +64,10 @@ Retrieves data from the server and returns it as a file saved to the filesystem.
 Sends data to the server.
 
 # URLSession acts as a factory for URLSessionTask instances.
+
+- Often, you will have a group of requests that have many properties in common.
+- For example, maybe some downloads should never happen over cellular data, or maybe certain requests should be cached differently than others. It can become tedious to configure related requests the same way.
+- The session is created with a configuration that specifies properties that are common across all of the tasks that it creates. 
+- Although many applications might only need to use a single instance of URLSession, having the power and flexibility of multiple sessions is a great tool to have at your disposal.
+
+
